@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="Script.js"></script>
+    <title>Computer Science Past Questions</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Computer Science Past Questions Archive</h1>
+        <div class="years">
+            
+            <div class="year">
+                <script>
+                    const modules = ["2021", "2022", "2023"];
+                               
+                    modules.forEach((module, index) => {
+                        document.write(`
+
+                        <h2 class="toggle-heading">${module}</h2>
+                        <div class="semesters">
+                            <a href="${module}/Year1 Semester1/index.html" class="semester" > <div class="semester">Year 1 - Semester 1</div> </a>
+                            <a href="${module}/Year1 Semester2/index.html" class="semester" ><div class="semester">Year 1 - Semester 2</div></a>
+                            <a href="${module}/Year2 Semester1/index.html" class="semester"><div class="semester">Year 2 - Semester 1</div></a>
+                            <a href="${module}/Year2 Semester2/index.html" class="semester"><div class="semester">Year 2 - Semester 2</div></a>
+                            <a href="${module}/Year3 Semester1/index.html" class="semester"><div class="semester">Year 3 - Semester 1</div></a>
+                            <a href="${module}/Year3 Semester2/index.html" class="semester"><div class="semester">Year 3 - Semester 2</div></a>
+                            <a href="${module}/Year4 Semester1/index.html" class="semester"><div class="semester">Year 4 - Semester 1</div></a>
+                            <a href="${module}/Year4 Semester2/index.html" class="semester"><div class="semester">Year 4 - Semester 2</div></a>
+                        </div>
+
+        
+                        `);
+                    });
+                </script>
+                
+            </div>
+
+           
+        </div>
+    </div>
+</body>
+</html>
